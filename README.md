@@ -97,7 +97,7 @@ reversed until the signal trimmed here want to undo , otherwise not possible.
 The Fade In effect gradually increases the volume of the audio upto the point user
 wanted and finally reach the maximum level and stay in max. The effect doesn’t have any extra gaining. So it starts soft and then becomes louder. This is useful for making smooth transitions into a track.
 Reverse fade-in also approximately possible and can’t back the exact original signal.
-#### implementation
+#### Implementation
 Same as Fade in implementation, just here user give the percentage of faded in, approximately
 or when the used fade in previously, then we just amplify that percent of
 signal.
@@ -116,7 +116,7 @@ effect. For example, here we choose 70 percent of our audio would be faded in. N
 ### Reverse Fade Out
 The Fade Out effect does the opposite of fade-in. It gradually decreases the volume
 at the end of the audio, so it fades into silence. This creates a smooth ending. Reverse fade-out also approximately possible and can’t back the exact original signal.
-#### implementation
+#### Implementation
 A linear ramp is applied to the end of the audio signal, reducing the amplitude to zero. Here user give the percentage of faded out,
 approximately or when the used fade out previously, then we just amplify that percent
 
@@ -135,7 +135,7 @@ effect. For example, here we choose 90 percent of our audio would be faded out. 
 ### Reverse of Reversed Signal
 The Reverse effect plays the audio backward, starting from the end and moving toward
 the beginning.
-#### implementation
+#### Implementation
 A matlab function ”flipud” used to flip the audio and play from the backward.
 #### Input and output Analysis
 Audio will be reversed, so we will find the original.
@@ -143,7 +143,7 @@ Audio will be reversed, so we will find the original.
 <h1 align= "center">
 
 **Reverse of Reversed Signal**
-https://github.com/user-attachments/assets/bc1753c2-c9ee-4bb9-974c-200f08aeb0ff
+
 </h1>
 <p align="center">
 <img src="https://github.com/user-attachments/assets/bc1753c2-c9ee-4bb9-974c-200f08aeb0ff", width="620">
@@ -189,7 +189,7 @@ passing threshold every 5dB will be converted to 1dB. Make up gain is additional
 gain if user wanted to have gain then attacktime is how quickly the compressor reacts and starts reducing the volume (gain reduction) after the audio signal exceeds the
 threshold and The release time refers to how quickly the compressor stops compressing
 (returns the gain back to normal) once the signal falls below the threshold. By doing reverse code engineering we can find the original signal.
-#### input and output Analysis
+#### Input and output Analysis
 Here, user have to give the inputs they used for compressing. Here, we take input as
 previously compressed output signal.
 
@@ -234,7 +234,12 @@ the best recovery but from graph we can see still noisy output.
 **Reverse Distortion**
 </h1>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/d51e7295-2a54-40e3-8f31-2f5b32271dce", width="620">
+<img src="https://github.com/user-attachments/assets/522f7166-df94-4931-b2b2-60d9c5fb6a72", width="620">
+</p>
+
+</h1>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/a96237f4-5e7e-41b7-9ea5-bd34255fdc8a", width="620">
 </p>
 
 ## Reverse Spectrum Effect
@@ -273,6 +278,18 @@ shift factor. We use MATLAB’s built-in resample function to undo the pitch cha
 User inputs the same semitone shift used originally (between -8 and 8) to reverse the
 effect. For instance, using semitones of -5 will return the pitch to its original value, as
 seen from the graphs when comparing x-axis shifts.
+
+<h1 align= "center">
+
+**Reverse Pitch Effect**
+</h1>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/a2c3a692-da18-4e6f-bd60-bcddd01a8850", width="620">
+</p>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/39f3e25e-39a0-4aa7-9d90-9d744ec3706a", width="620">
+</p>
 
 
 ## Result Analysis
