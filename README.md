@@ -1,0 +1,2 @@
+# Audio De-Effect Processor
+ This project report details the design and implementation of a De-Effects Processor using MATLAB for real-time enhancement and restoration of audio signals through digital signal processing (DSP) techniques. The system focuses on removing unwanted effects such as noise, echo, and distortion, improving the clarity and quality of audio. It covers the architecture, design, user interface development, and performance evaluation of the processor.
