@@ -1,8 +1,9 @@
 # Audio De-Effect Processor
 
 By [Naimur Rahman](https://github.com/nayeem-rafi), [Md. Nayon Khan](https://github.com/nayon045), [Suvom Karmakar](https://github.com/suvom027).
-
+## [Click for Audio Effect Processor](https://github.com/nayeem-rafi/Audio-Effect-Processor)
 ## [Click for Open Source of Project Details & Video](https://drive.google.com/drive/folders/1DnzlJkw3hlO5iq0watlQuw7EBvpG2Dsl?usp=drive_link)
+
 
 
 ## Abstract
